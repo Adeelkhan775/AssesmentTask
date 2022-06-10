@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="328.299">
+    <testcase classname="Title of your feature" name="Verify Bag is present" time="47.372">
+        <system-out><![CDATA[Given User opens the browse.................................................passed
+When User enters the search black Chanel handbags...........................passed
+When User click on search button............................................passed
+Then verify result is according to the search...............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Title of your feature" name="place the order of bag" time="280.502">
+        <failure message="stale element reference: element is not attached to the page document&#10;  (Session info: chrome=102.0.5005.63)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference&#10;Build info: version: '4.2.1', revision: 'ac4d0fdd4a'&#10;System info: host: 'HP-640G4', ip: '10.16.0.16', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [ca942b36334d743101954bdd2032ff44, clickElement {id=637e48cd-dfb1-416a-8438-89c315ab52d5}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:63109}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63109/devtoo..., se:cdpVersion: 102.0.5005.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on WINDOWS (ca942b36334d743101954bdd2032ff44)] -&gt; xpath: //button[@aria-label='Continue'][contains(text(),'Continue')]]&#10;Session ID: ca942b36334d743101954bdd2032ff44" type="org.openqa.selenium.StaleElementReferenceException"><![CDATA[Given User opens the browse.................................................passed
+When User enters the search black Chanel handbags...........................passed
+And User click on search button.............................................passed
+And User Selects the Third bag..............................................passed
+And Click on Add the Bag....................................................passed
+And Click on checkout.......................................................passed
+And Enter Email Address.....................................................passed
+And Enter Name and Address..................................................passed
+And Click on Continue.......................................................passed
+And Select Ground...........................................................passed
+And Click on Continue again.................................................failed
+Then verify result is bag order is placed...................................skipped
+
+StackTrace:
+org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=102.0.5005.63)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.2.1', revision: 'ac4d0fdd4a'
+System info: host: 'HP-640G4', ip: '10.16.0.16', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ca942b36334d743101954bdd2032ff44, clickElement {id=637e48cd-dfb1-416a-8438-89c315ab52d5}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:63109}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63109/devtoo..., se:cdpVersion: 102.0.5005.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (ca942b36334d743101954bdd2032ff44)] -> xpath: //button[@aria-label='Continue'][contains(text(),'Continue')]]
+Session ID: ca942b36334d743101954bdd2032ff44
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:551)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy23.click(Unknown Source)
+	at com.Pages.Home_Page.click_Continue_btn(Home_Page.java:105)
+	at stepDefination.testShoping.click_on_continue_again(testShoping.java:115)
+	at ✽.Click on Continue again(file:///C:/Users/User/eclipse-workspace/AssessmentTask/src/test/resources/Features/ShopignBag.feature:24)
+]]></failure>
+    </testcase>
+</testsuite>
